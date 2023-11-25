@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+    </head>
+    <body>
+        <form action="https://www.example.com/signup.php" method="get" >
+
+            <div>
+            <fieldset style="background-color: aqua;">
+                <legend>Personal Details</legend>
+            <p>
+                First Name:
+                <input type="text" name="firstname" size="15" maxlength="30" required>
+                Last name:
+                <input type="text" name="lastname" size="15" maxlength="30">
+            </p>
+
+            <p>
+                Gender:
+                
+                <label><input type="radio" name="male" checked >Male</label>
+                
+                <input id="female" type="radio" name="male" >
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                Date of Birth:
+                <input type="date" name="dob">
+            </p>
+
+            <p>
+                Enter Your Email:
+                <input type="Email" name="mail">
+            </p>
+
+            <p>
+                Enter Your Website:
+                <input type="url" name="url">
+
+            </p>
+
+            <p>
+                Nationality:
+                <select name="countries" multiple>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="America">USA</option>
+                </select>
+            </p>
+        </fieldset>
+    </div>
+
+        <p>
+            Password:
+            <input type="password" name="password" size="15" maxlength="30">
+            <br>
+            <br>
+            Re-Enter Password:
+            <input type="password" name="password" size="15" maxlength="30">
+
+        </p>
+
+        <p>
+            Interest:
+            <input type="checkbox" name="Intereset" value="men">Men's Clothing
+            <input type="checkbox" name="Intereset" value="women">Women's Clothing
+            <input type="checkbox" name="Intereset" value="acc">Accessories
+        </p>
+
+        <p>
+            Comments:
+            <textarea rows="6" cols="24">Enter Your Comments</textarea>
+        </p>
+        <p>
+
+            Upload Profile Picture:
+            
+            <input type="file">
+
+            <br>
+            <br>
+            <input type="submit" value="Upload">
+            <input type="submit">
+            <br>
+            <input type="image" src="submit.jpg" width="150">
+
+        </p>
+        </form>
+    </body>
+</html>
